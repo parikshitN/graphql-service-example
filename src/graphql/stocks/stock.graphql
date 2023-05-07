@@ -1,0 +1,9 @@
+type Stock {
+    name: String!
+    price: Float!
+}
+
+type Query {
+    stocks: [Stock]!
+    findStock(name: String!) : Stock!
+}

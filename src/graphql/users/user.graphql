@@ -1,0 +1,14 @@
+type User {
+    name: String!
+    username: String!
+}
+
+input UserInput {
+    name: String
+}
+
+type Query {
+    users: [User!]!
+
+    findUser(userReq: UserInput): User!
+}
